@@ -1,4 +1,4 @@
-var jasonMiguelApp = angular.module('jasonMiguelApp', ['ngRoute']);
+var jasonMiguelApp = angular.module('jasonMiguelApp', ['ngRoute', 'ngAnimate']);
 
 jasonMiguelApp.config(function($routeProvider) {
     $routeProvider
@@ -25,12 +25,6 @@ jasonMiguelApp.config(function($routeProvider) {
             controller  : 'blogController'
         })
 
-        // route for the contact page
-        .when('/contact', {
-            templateUrl : 'pages/contact.html',
-            controller  : 'contactController'
-        });
-
 });
 
 jasonMiguelApp.controller('mainController', function($scope){
@@ -45,7 +39,4 @@ jasonMiguelApp.controller('blogController', function($scope){
     $scope.message = '// TODO';
 });
 
-jasonMiguelApp.controller('contactController', function($scope){
-    $scope.message = 'If you\'d like to connect personally or professionally, you can reach me on any of the above social networks.';
-});
 
