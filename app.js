@@ -1,6 +1,7 @@
 var jasonMiguelApp = angular.module('jasonMiguelApp', ['ngRoute', 'ngAnimate']);
 
 jasonMiguelApp.config(function($routeProvider) {
+
     $routeProvider
 
         // route for the home page
